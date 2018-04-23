@@ -20,7 +20,7 @@ PACKAGES="${PACKAGES} rh-ruby22 rh-ruby22-rubygems rh-ruby22-ruby-devel"
 # if the release is a red hat version then we need to set additional arguments for yum repositories
 RED_HAT_MATCH='^Red Hat.*$'
 if [[ $RELEASE =~ $RED_HAT_MATCH ]]; then
-  YUM_ARGS="${YUM_ARGS} --disablerepo=\* --enablerepo=rhel-7-server-rpms --enablerepo=rhel-server-rhscl-7-rpms --enablerepo=rhel-7-server-optional-rpms"
+  YUM_ARGS="${YUM_ARGS}‚ --enablerepo=rhel-7-server-rpms --enablerepo=rhel-server-rhscl-7-rpms --enablerepo=rhel-7-server-optional-rpms"
 fi
 
 # enable epel when on CentOS
